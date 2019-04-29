@@ -4,7 +4,7 @@
 
 package com.dh.ssiservice.services;
 
-import com.dh.ssiservice.exceptions.NotFoundException;
+//import com.dh.ssiservice.exceptions.NotFoundException;
 import org.springframework.data.repository.CrudRepository;
 
 import java.lang.reflect.ParameterizedType;
@@ -25,7 +25,7 @@ public abstract class GenericServiceImpl<T> implements GenericService<T> {
     public T findById(Long id) {
         Optional<T> optional = getRepository().findById(id);
         if (!optional.isPresent()) {
-            throw new NotFoundException(getType() + " id:" + id + " Not Found");
+            //throw new NotFoundException(getType() + " id:" + id + " Not Found");
         }
         return optional.get();
     }
