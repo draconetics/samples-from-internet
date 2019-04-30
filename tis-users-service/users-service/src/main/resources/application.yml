@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    hikari:
+      jdbcUrl: jdbc:mysql://localhost:3306/users?useSSL=false
+      username: root
+      password: root
+      driverClassName: com.mysql.jdbc.Driver
+      maximumPoolSize: 5
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        transaction:
+          flush_before_completion: true
+        hbm2ddl:
+          auto: create
+        show_sql: true
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+users.account.status: ACTIVATED_ALLOWED

@@ -1,0 +1,50 @@
+@startuml
+set namespaceSeparator none
+
+hide method
+
+namespace admin.service.model.domain {
+
+    class Account {
+        - id: Long
+        - email: String
+        - state: AccountState
+        - avatarId: String
+        - createdDate: Date
+    }
+
+    class Teacher {
+        - profession: String
+    }
+
+    class Student {
+        - note: Integer
+    }
+
+    abstract class User {
+        - id: Long
+        - firstName: String
+        - lastName: String
+        - password: String
+        - active: Boolean
+        - createdDate: Date
+        - account: Account
+    }
+
+    class Contract {
+        - id: Long
+        - salary: Double
+        - initDate: Date
+        - endDate: Date
+        - teacher: Teacher
+    }
+
+    Teacher -up-|> User
+
+    Student -up-|> User
+
+     User *-right-> Account : account
+
+    Contract *-down-> Teacher : contract
+}
+@enduml
