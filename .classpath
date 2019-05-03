@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/dh/ssiservice/exception/|com/dh/ssiservice/exceptions/" kind="src" path="ssi-service-backend-master/ssi-service-backend-master/src/main/java"/>
+	<classpathentry kind="src" path="ssi-service-backend-master/ssi-service-backend-master/src/main/java/com/dh/ssiservice/exception"/>
+	<classpathentry kind="src" path="ssi-service-backend-master/ssi-service-backend-master/src/main/java/com/dh/ssiservice/exceptions"/>
+	<classpathentry kind="src" path="ssi-service-backend-master/ssi-service-backend-master/src/test/java"/>
+	<classpathentry kind="src" path="tis-users-service/users-service/src/main/java"/>
+	<classpathentry kind="src" path="tis-users-service/users-service/src/test/java"/>
+	<classpathentry kind="lib" path="ssi-service-backend-master/ssi-service-backend-master/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="tis-users-service/users-service/external/binaries-api-0.0.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
