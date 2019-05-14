@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo
+    username: dbuser
+    password: dbp4ss
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
